@@ -1,454 +1,228 @@
 <!doctype html>
 
-
-
 <html lang="pl">
-
-
-
-
 
 
 
 <head>
 
-
-
   <meta charset="utf-8" />
-
-
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
-
   <title>Sztanca – ADHD, neuroróżnorodność, konsultacje, terapia uzależnień, diagnostyka</title>
-
-
 
   <meta name="description" content="Sztanca: diagnoza ADHD (DIVA-5), konsultacje psychologiczne, terapia uzależnień. Wizyta online lub stacjonarnie. Prosta rezerwacja i płatności online." />
 
 
 
-
-
-
-
   <!-- Delikatniejsza, cieńsza czcionka -->
-
-
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
 
 
 
-
-
-
-
   <style>
-
-
 
     :root { --bg:#ffffff; --card:#f9f9f9; --text:#1a1a1a; --muted:#555; --accent:#005bbb; --accent-2:#007f5f; --danger:#d00000; --radius:16px; --shadow:0 4px 12px rgba(0,0,0,.1); --maxw:1080px; }
 
-
-
     *{box-sizing:border-box}
-
-
 
     html,body{margin:0;padding:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text)}
 
-
-
     html{scroll-behavior:smooth}
-
-
 
     a{color:var(--accent);text-decoration:none}
 
-
-
     a:hover{text-decoration:underline}
-
-
 
     header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:#ffffffee;border-bottom:1px solid #ddd;z-index:20}
 
-
-
     nav{max-width:var(--maxw);margin:0 auto;padding:.75rem 1rem;display:flex;align-items:center;gap:1rem}
-
-
 
     .brand{display:flex;align-items:center;gap:.5rem;}
 
-
-
     .brand img{height:56px;width:auto;border-radius:4px}
-
-
 
     .brand span{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:300;letter-spacing:.03em;}
 
-
-
     .spacer{flex:1}
-
-
 
     .btn{display:inline-block;padding:.6rem 1rem;border-radius:var(--radius);background:var(--accent);color:#fff;font-weight:600;box-shadow:var(--shadow);border:0;cursor:pointer}
 
-
-
     .btn.secondary{background:var(--accent-2)}
-
-
 
     .btn.ghost{background:transparent;border:1px solid #ccc;color:var(--text);box-shadow:none}
 
-
-
     main{max-width:var(--maxw);margin:0 auto;padding:2rem 1rem 4rem}
-
-
 
     .grid{display:grid;gap:1rem}
 
-
-
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
-
-
 
     .card{background:var(--card);border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);padding:1.25rem}
 
-
-
     h1{font-size:clamp(1.8rem,3vw,2.4rem);margin:.25rem 0 1rem;font-family:'Playfair Display',serif;font-weight:400}
-
-
 
     h2{font-size:clamp(1.4rem,2.2vw,1.8rem);margin:0 0 .75rem;font-family:'Playfair Display',serif;font-weight:400}
 
-
-
     h3{margin:.25rem 0 .5rem;font-family:'Playfair Display',serif;font-weight:400}
-
-
 
     p{color:var(--muted);line-height:1.6}
 
-
-
     blockquote {
-
-
 
   font-family: 'Playfair Display', serif;
 
-
-
   font-style: italic;
-
-
 
   font-weight: 400;
 
-
-
   color: #444;
-
-
 
   font-size: 1.3rem;
 
-
-
   width: fit-content;
-
-
 
   margin: 1.5rem 5% 1.5rem auto;
 
-
-
   padding: 1rem 1.5rem;
-
-
 
   text-align: right;
 
-
-
   letter-spacing: 0.5px;
-
-
 
   border-radius: 12px;
 
-
-
   background: #f9f9f9;
-
-
 
 }
 
-
-
     ul{margin:.25rem 0 0 1.1rem;color:var(--muted)}
-
-
 
     .cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 
-
-
     .cols-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
-
-
 
     .kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;color:var(--accent-2)}
 
-
-
     .price{font-size:normal;font-weight:700;color:var(--text)}
-
-
 
     .footer{margin-top:2rem;padding-top:1.5rem;border-top:1px solid #ddd;color:var(--muted);font-size:.95rem}
 
-
-
     .disclaimer{font-size:.9rem;color:#777}
-
-
 
     .notice{background:#f1f1f1;border-left:3px solid var(--accent-2);padding:.75rem 1rem;border-radius:8px;color:#333}
 
-
-
     section{scroll-margin-top:90px}
-
-
 
     @media (max-width:900px){.hero{grid-template-columns:1fr}}
 
-
-
   </style>
-
-
 
 </head>
 
-
-
 <body>
-
-
 
   <header>
 
-
-
     <nav>
-
-
 
       <div class="brand">
 
-
-
         <img src="logo.png" alt="Logo Sztanca" />
-
-
 
         <span>SZTANCA</span>
 
-
-
       </div>
-
-
 
       <div class="spacer"></div>
 
-
-
       <a href="#oferta" class="btn ghost">Oferta</a>
-
-
 
       <a href="#rezerwacja" class="btn ghost">Rezerwacja</a>
 
-
-
       <a href="#kontakt" class="btn">Kontakt</a>
-
-
 
       <a href="#o-mnie" class="nav-button">O mnie</a>
 
-
-
     </nav>
-
-
 
   </header>
 
 
 
-
-
-
-
   <main>
-
-
 
     <section class="hero">
 
-
-
       <div>
 
-
-
 <span class="kicker" style="display: block; line-height: 1.8;">
-
   <span style="display: inline-block;">• psychoterapia uzależnień</span> 
-
   <span style="display: inline-block;">• konsultacje</span> 
-
   <span style="display: inline-block;">• diagnostyka</span> 
-
   <span style="display: inline-block;">• ADHD/AuDHD</span> 
-
   <span style="display: inline-block;">• DIVA-5</span> 
-
   <span style="display: inline-block;">• SMART Recovery</span> 
-
   <span style="display: inline-block;">• TSR</span> 
-
   <span style="display: inline-block;">• neuroróżnorodność</span>
-
 </span>
-
-
 
  </div>
 
-
-
 </section>
-
-
-
-
 
 
 
 <section style="position: relative; clear: both; min-height: 250px; margin-top: 80px; margin-bottom: 100px;">
-
   
-
   <div style="
-
     position: absolute; 
-
     right: 0; 
-
     bottom: -10px; 
-
     width: 280px; 
-
     height: 280px; 
-
     background-image: url('lisc.png'); 
-
     background-size: contain; 
-
     background-repeat: no-repeat; 
-
     background-position: bottom right;
-
     opacity: 0.3; 
-
     pointer-events: none; 
-
     z-index: 0;
-
   "></div>
 
-
-
   <blockquote style="
-
     position: relative;
-
     z-index: 1;
-
     margin: 0 0 0 auto; 
-
     text-align: right; 
-
     font-family: 'Playfair Display', serif; 
-
     font-style: italic; 
-
     color: #888; 
-
     max-width: 500px; 
-
     border: none; 
-
     padding-right: 20px;
-
     background: transparent;
-
   ">
-
     „[...] W umyśle początkującego jest wiele możliwości, w umyśle eksperta tylko kilka”. <br>
-
     <span style="font-size: 0.9rem; font-style: normal; text-transform: uppercase; letter-spacing: 1px;">– Shunryu Suzuki</span>
-
   </blockquote>
-
 </section>
-
-
-
-
 
 
 
 <section style="margin-top: 40px;">
 
-
-
   <h1>Sztanca – rzetelna diagnoza i praktyczna pomoc. Wsparcie psychologiczne. </h1>
-
-
 
   <p style="font-family: 'Playfair Display', serif; font-size: 1.25rem; line-height: 1.7; color: #666666; font-weight: 400; text-align: justify; hyphens: auto;">
 
-
-
     W pracy towarzyszę klientom w odkrywaniu ich wewnętrznych zasobów, korzystając 
-
-
 
     z metod opartych na dowodach (EBP). Jako terapeuta pracujący w nurcie TSR stawiam na krótkoterminową współpracę i wspólne budowanie rozwiązań, które przybliżą Cię do Twoich celów. Zapraszam na spotkania online i stacjonarne.
 
-
-
   </p>
-
-
 
 </section>
 
@@ -457,139 +231,165 @@
 
 
 
-
-
-
-
-
-
-
     
-
     
-
     </div>
-
 <section id="oferta"
-
     <div class="card" style="background-color: #f5f5f5; padding: 30px; border-radius: 15px; flex: 1; min-width: 280px; text-align: center;">
-
       <h3 style="font-weight: 700; font-size: 1.4em; margin-bottom>
-
-
 
   <div class="cols-3" style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-
-
     <div class="card" style="background-color: #f5f5f5; padding: 30px; border-radius: 15px; flex: 1; min-width: 250px;">
-
       <h3 style="font-weight: 700; font-size: 1.4em; margin-bottom: 15px; color: #2F4F4F;">Psychoterapia uzależnień</h3>
-
       <p style="font-weight: 400; font-size: 0.95em; color: #555; line-height: 1.4;">
-
         Profesjonalna psychoterapia leczenia uzależnień z elementami CBT
-
       </p>
-
     </div>
 
-
-
     <div class="card" style="background-color: #f5f5f5; padding: 30px; border-radius: 15px; flex: 1; min-width: 250px;">
-
       <h3 style="font-weight: 700; font-size: 1.4em; margin-bottom: 15px; color: #2F4F4F;">Konsultacje psychologiczne wraz z terapią</h3>
-
       <p style="font-weight: 400; font-size: 0.95em; color: #555; line-height: 1.4;">
-
         Praca z emocjami i trudnościami w obszarze funkcjonowania psychospołecznego
-
       </p>
-
     </div>
-
-
 
     <div class="card" style="background-color: #f5f5f5; padding: 30px; border-radius: 15px; flex: 1; min-width: 250px;">
-
       <h3 style="font-weight: 700; font-size: 1.4em; margin-bottom: 15px; color: #2F4F4F;">Diagnoza ADHD</h3>
-
       <p style="font-weight: 400; font-size: 0.95em; color: #555; line-height: 1.4;">
-
         Diagnoza z wykorzystaniem wywiadu DIVA-5 z pełnym raportem diagnostycznym
-
       </p>
-
     </div>
-
-
 
   </div>
+</section>
+
+    <section id="cennik">
+      <h2>Cennik</h2>
+      <div class="cols-3">
+        <div class="card">
+          <h3>Konsultacja/sesja 50 min</h3>
+          <p class="price">PLN 150</p>
+        </div>
+        <div class="card">
+          <h3>Diagnoza ADHD (pakiet)</h3>
+          <p class="price">PLN 400</p>
+        </div>
+        <div class="card">
+          <h3>Terapia uzależnień 50 min</h3>
+          <p class="price">PLN 180</p>
+        </div>
+      </div>
+    </section>
+<section id="o-mnie" <section id="o-mnie" style="padding: 40px 20px; max-width: 800px; margin: 0 auto; line-height: font-family: 'Playfair Display',serif; color: #333;">
+  
+<section style="font-family: 'Playfair Display', serif; color: #333; max-width: 1000px; margin: 50px auto; padding: 0 20px; line-height: 1.4;">
+
+  <div style="display: flex; gap: 50px; align-items: center; margin-bottom: 60px; flex-wrap: wrap;">
+    <div style="flex: 0 0 220px;">
+      <img src="logo1.png" alt="Logo" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <div style="flex: 1; min-width: 300px;">
+      <h2 style="margin: 0 0 20px 0; font-weight: 700; font-size: 2.5em; color: #222; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 5px;">O mnie</h2>
+      <p style="margin-top: 20px; font-size: 1.2em; color: #444; font-weight: 400; font-style: italic;">
+        Jestem psychologiem oraz certyfikowaną specjalistką psychoterapii uzależnień <span style="font-weight: 700;">(nr cert. SP/2444/N/2024)</span>. Moja droga zawodowa opiera się na ciągłym rozwoju, aby wspierać osoby w procesie zmiany i zdrowienia.
+      </p>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom: 40px; font-weight: 700; font-size: 1.8em; text-align: center;">Wykształcenie i kwalifikacje</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 30px;">
+    
+    <div>
+      <h4 style="margin: 0 0 10px 0; color: #000; font-weight: 700; font-size: 1.2em;">Wykształcenie bazowe</h4>
+      <p style="margin: 0; color: #555; font-weight: 400;">
+        Ukończyłam jednolite studia magisterskie na kierunku psychologia na Uniwersytecie Wrocławskim oraz posiadam certyfikat Specjalisty Psychoterapii Uzależnień.
+      </p>
+    </div>
+
+    <div>
+      <h4 style="margin: 0 0 10px 0; color: #000; font-weight: 700; font-size: 1.2em;">Psychologia edukacyjna</h4>
+      <p style="margin: 0; color: #555; font-weight: 400;">
+        Jestem również psychologiem edukacyjnym – ukończyłam studia podyplomowe w tym zakresie, co pozwala mi skutecznie wspierać procesy rozwoju i nauki.
+      </p>
+    </div>
+  </div>
+
+  <div style="background-color: #f9f9f9; padding: 5px; border-left: 4px solid #039BE5; margin-bottom: 20px;">
+    <h4 style="margin: 0 0 10px 0; color: #000; font-weight: 700; font-size: 1.2em;">Terapia TSR (II stopień)</h4>
+    <p style="margin: 0; color: #555; font-weight: 400;">
+      Obecnie jestem w trakcie zaawansowanego szkolenia <span style="font-weight: 700;">II stopnia w Terapii Skoncentrowanej na Rozwiązaniach (TSR)</span>, stale doskonaląc swój warsztat pracy terapeutycznej.
+    </p>
+  </div>
+
 
 </section>
 
 
-
-    <section id="cennik">
-
-      <h2>Cennik</h2>
-
-      <div class="cols-3">
-
-        <div class="card">
-
-          <h3>Konsultacja/sesja 50 min</h3>
-
-          <p class="price">PLN 150</p>
-
-        </div>
-
-        <div class="card">
-
-          <h3>Diagnoza ADHD (pakiet)</h3>
-
-          <p class="price">PLN 400</p>
-
-        </div>
-
-        <div class="card">
-
-          <h3>Terapia uzależnień 50 min</h3>
-
-          <p class="price">PLN 180</p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-<section id="o-mnie" <section id="o-mnie" style="padding: 40px 20px; max-width: 800px; margin: 0 auto; line-height: font-family: 'Playfair Display',serif; color: #333;">
+<!-- Google Calendar Appointment Scheduling begin -->
+<section id="rezerwacja" style="text-align: center; margin-bottom: 40px; padding-top: 30px; font-family: 'Playfair Display', serif;">
 
   
+  <section id="rezerwacja" style="text-align: center; margin-bottom: 50px; padding-top: 0; margin-top: -20px; font-family: 'Playfair Display', serif;">
 
-<section style="font-family: 'Playfair Display', serif; color: #333; max-width: 1000px; margin: 50px auto; padding: 0 20px; line-height: 1.4;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+    
+    <img src="check-24124_1280.png" style="width: 60px; height: auto; margin: 10;">
 
-
-
-  <div style="display: flex; gap: 50px; align-items: center; margin-bottom: 60px; flex-wrap: wrap;">
-
-    <div style="flex: 0 0 220px;">
-
-      <img src="logo1.png" alt="Logo" style="width: 100%; height: auto; display: block;">
-
+    <div style="transform: scale(1.1); transform-origin: center;">
+      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+      <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+      <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2k9MXzUeJROo3K_2XxbRP_SGZ9AQFxz74Bl2U0vqghPZ8fPqc-knhzhzQMJ_8kBrOHkvKUw3gT?gv=true',
+              color: '#039BE5',
+              label: 'Zarezerwuj spotkanie',
+              target,
+            });
+          });
+        })();
+      </script>
     </div>
 
+  </div>
+</section>
 
+</div>
+</style>
+<section id="kontakt" style="font-family: 'Playfair Display', serif; max-width: 1080px; margin: 40px auto 100px auto; padding: 0 20px;">
+  
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: stretch;">
+    
+    <div style="background-color: #f9f9f9; padding: 30px; border-radius: 16px; flex: 1; min-width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; align-items: center; gap: 25px;">
+      
+      <img src="ja.jpg" alt="Magdalena Szulc" style="width: 80px; height:auto; border-radius: 50%; object-fit: cover; border: none; box-shadow:none">
+      
+      <div style="text-align: left;">
+        <h4 style="font-weight: 700; font-size: 1.2em; margin: 0 0 12px 0; color: #1a1a1a;">Dane kontaktowe</h4>
+        <p style="font-size: 0.95em; margin: 6px 0; color: #444;">Email: <a href="mailto:sztanca.kontakt@gmail.com" style="color: #039BE5; text-decoration: none;">sztanca.kontakt@gmail.com</a></p>
+        <p style="font-size: 0.95em; margin: 6px 0; color: #444;">Telefon: +48 533 903 243</p>
+        <p style="font-size: 0.95em; margin: 6px 0; color: #444;">LinkedIn: <a href="https://www.linkedin.com/in/magdalena-szulc-596785250/" target="_blank" style="color: #039BE5; text-decoration: none;">Profil zawodowy</a></p>
+        <p style="font-size: 0.95em; margin: 6px 0; color: #444; display: flex; align-items: center; gap: 6px;">
+         <img src="instagram.png" alt="" style="width: 30px; height:auto;"> 
+          <a href="https://www.instagram.com/sztanca_gabinet/" target="_blank" style="color: #039BE5; text-decoration: none;">@sztanca_gabinet</a>
+        </p>
+      </div>
+    </div>
 
-    <div style="flex: 1; min-width: 300px;">
-
-      <h2 style="margin: 0 0 20px 0; font-weight: 700; font-size: 2.5em; color: #222; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 5px;">O mnie</h2>
-
-      <p style="margin-top: 20px; font-size: 1.2em; color: #444; font-weight: 400; font-style: italic;">
-
-        Jestem psychologiem oraz certyfikowaną specjalistką psychoterapii uzależnień <span style="font-weight: 700;">(nr cert. SP/2444/N/2024)</span>. Moja droga zawodowa opiera się na ciągłym rozwoju, aby wspierać osoby w procesie zmiany i zdrowienia.
-
+    <div style="background-color: #f9f9f9; padding: 30px; border-radius: 16px; flex: 1; min-width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+      <h4 style="font-weight: 700; font-size: 1.2em; margin: 0 0 15px 0; color: #1a1a1a;">Dane firmy</h4>
+      <p style="font-size: 0.9em; color: #555; line-height: 1.6; margin: 0;">
+        <strong style="color: #222;">SZTANCA Magdalena Szulc</strong><br>
+        Usługi psychologiczne i terapeutyczne<br>
+        ul. Koszary 65/10, 22-400 Zamość<br>
+        NIP: 7922286505
       </p>
-
+      <p style="font-size: 0.85em; color: #888; margin-top: 15px; font-style: italic;">
+        Certyfikat specjalisty psychoterapii uzależnień nr SP/2444/N/2024
+      </p>
     </div>
